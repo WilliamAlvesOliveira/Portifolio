@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --tela: calc(100vh - 30px);
+}
+
+
 body {
     background-color: rgba(0, 0, 0, 0.85);
     color: white;
@@ -28,17 +33,9 @@ header > div, .Me {
     gap: 10px;
 }
 
-header img, .Me > img {
+header img{ 
     width: 30px;
     border-radius: 50%;
-}
-
-header img {
-    width: 30px;
-}
-
-.Me > img {
-    width: 80px;
 }
 
 header p, .Me > h1 {
@@ -52,17 +49,22 @@ header ul {
     gap: 10px;
 }
 
+.william img {
+    border-radius: 30px 0px 30px 0px;
+}
+
 .william {
-    padding: 25px 10px;
+    width: 100vw;
+    min-height: var(--tela);
+    padding: 10px 10px;
 }
 
 .aboutme {
-    width: 80vw;
+    margin-left: 20px;
     padding: 5px;
-    margin-bottom: 30px;
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-right-width: 1px;
-    border-radius: 20px;
+    border-bottom: none;
+    border-top-left-radius: 20px;
 }
 
 @media screen and (orientation: landscape) {
@@ -72,6 +74,7 @@ header ul {
 }
 
 nav ul {
+    display: none;
     background-color: rgba(255, 255, 255, 0.903);
     position: absolute;
     width: 200px;

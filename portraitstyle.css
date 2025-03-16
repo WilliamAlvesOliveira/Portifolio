@@ -1,0 +1,25 @@
+@media screen and (orientation: portrait) {
+    .william{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .william h1{
+        text-align: right;
+        padding: 0px 15px;
+    }
+    .william img {
+        position: relative;
+        top: -30px;
+        width: 70vw;
+        z-index: -1;
+    }
+
+    .aboutme{
+        position: relative;
+        top:  -60px;
+        text-align: right;
+    }
+
+
+}
