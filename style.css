@@ -18,6 +18,10 @@ body {
 }
 
 header {
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: rgb(40, 40, 40);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,26 +57,6 @@ header ul {
     border-radius: 30px 0px 30px 0px;
 }
 
-.william {
-    width: 100vw;
-    min-height: var(--tela);
-    padding: 10px 10px;
-}
-
-.aboutme {
-    margin-left: 20px;
-    padding: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-bottom: none;
-    border-top-left-radius: 20px;
-}
-
-@media screen and (orientation: landscape) {
-    .aboutme {
-        width: 70%;
-    }
-}
-
 nav ul {
     display: none;
     background-color: rgba(255, 255, 255, 0.903);
@@ -96,20 +80,19 @@ nav li:hover {
     color: white;
 }
 
-.william{
+.william {
     margin: 10px 0px;
+    width: 100vw;
+    min-height: var(--tela);
+    padding: 10px 10px;
 }
 
-.Me{
-    margin-bottom: 30px;
-}
-
-.aboutme{
+.aboutme {
+    margin-left: 20px;
     padding: 10px;
-}
-
-.aboutme > h2 {
-    font-size: 1.4em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: none;
+    border-top-left-radius: 20px;
 }
 
 .aboutme > p{

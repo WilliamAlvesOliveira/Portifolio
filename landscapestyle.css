@@ -1,0 +1,61 @@
+@media screen and (orientation: landscape) {
+    .william{
+        display: flex;
+        width: 94vw;
+        padding-left: 15vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .william > div{
+        position: relative;
+    }
+
+    .william > div > h1{
+        position: relative;
+        top: 50px;
+        left: 380px;
+        font-size: 2.5em;
+    }
+
+    .william  > div > img{
+        width: 400px;
+    }
+    
+    .aboutme {
+        position: relative;
+        top: -40px;
+        left: 200px;
+        width: 70%;
+        border-right: none;
+    }
+    
+}
+
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+    .william{
+        padding: 0;
+        margin-left: 5PX;
+    }
+
+    .william > div > h1{
+        position: relative;
+        top: 40px;
+        left: 220px;
+        font-size: 2em;
+    }
+
+    .william  > div > img{
+        width: 250px;
+    }
+    
+    .aboutme {
+        position: relative;
+        top: -40px;
+        left: 130px;
+        width: 80%;
+        border-right: none;
+        font-size: 0.9em;
+    }
+}
