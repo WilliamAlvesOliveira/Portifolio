@@ -15,11 +15,9 @@
         z-index: -1;
     }
 
-    .aboutme{
+    #aboutme{
         position: relative;
         top:  -60px;
         text-align: right;
     }
-
-
 }

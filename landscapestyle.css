@@ -23,7 +23,7 @@
         width: 400px;
     }
     
-    .aboutme {
+    #aboutme {
         position: relative;
         top: -40px;
         left: 200px;
@@ -50,7 +50,7 @@
         width: 250px;
     }
     
-    .aboutme {
+    #aboutme {
         position: relative;
         top: -40px;
         left: 130px;

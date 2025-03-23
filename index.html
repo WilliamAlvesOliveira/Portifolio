@@ -12,19 +12,22 @@
 <body>
     <header>
         <div>
-            <p>William Alves de Oliveira</p>
+            <a href="#">
+                <p>William Alves de Oliveira</p>
+            </a>
         </div>
-        <div onclick="showmenu()">
+        <div class='hamburger' onclick="showmenu()">
             <span class="material-symbols-outlined">menu</span>
         </div>
     </header>
 
     <nav id="menu">
         <ul id="nav-menu">
-            <li>Sobre mim</li>
-            <li>Ferramentas</li>
-            <li>Projetos</li>
-            <li>Redes</li>
+            <li onclick="goTo('aboutme')" >Sobre mim</li>
+            <li onclick="goTo('Website')">Website</li>
+            <li onclick="gpTo('Dispensa')">Dispensa</li>
+            <li onclick="goTo('Art-Gallery')">Art Gallery</li>
+            <li onclick="goTo('redes')">Redes</li>
         </ul>
     </nav>
 
@@ -34,7 +37,7 @@
             <img src="imagens/minhafoto.jpg" alt="William Alves">
         </div>
 
-        <section class="aboutme">
+        <section id="aboutme">
             <h2>Sobre mim</h2>
             <p>Meu nome é William, estou atualmente estudando para me tornar um desenvolvedor fullstack. Embora meu foco atual esteja nos estudos de front-end (HTML,CASS e JavaScript), também possuo conhecimentos básicos em Python e PHP.</p>
 
@@ -63,19 +66,60 @@
         
     </main>
 
-    <footer>
+    <footer id="redes">
         <p>Minhas Redes</p>
 
         <div class="Minhas-Redes">
-            <div class="redes">
-                <img src="imagens/linkedinLogo.png" alt="LinkedIn-logo">
-                <p>Linkedin</p>
-            </div>
-            <div class="redes"></div>
-            <div class="redes"></div>
-            <div class="redes"></div>
+            <a href="https://www.linkedin.com/in/william-oliveira-a047a7268/" target="_blank">
+                <div class="redes">
+                    <img src="imagens/linkedinLogo.png" alt="LinkedIn-logo">
+                    <p>Linkedin</p>
+                </div>
+            </a>
+
+            <a href="https://github.com/WilliamAlvesOliveira" target="_blank">
+                <div class="redes">
+                    <img src="imagens/github.png" alt="Github-logo">
+                    <p>Github</p>
+                </div>
+            </a>
+
+            <a href="https://www.instagram.com/27will_ramones/" target="_blank">
+                <div class="redes">
+                    <img src="imagens/instagram.png" alt="Instagram-logo">
+                    <p>instagran</p>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/william.ramone.1" target="_blank">
+                <div class="redes">
+                    <img src="imagens/facebook.png" alt="Facebook-logo">
+                    <p>facebook</p>
+                </div>
+            </a>
         </div>
 
     </footer>
+
+    <script>
+            function showmenu(){
+                menu.classList.toggle('show');
+            }
+
+            function goTo(id) {
+                const section = document.getElementById(id);
+                 const header = document.querySelector('header');
+                if (section && header) {
+                    const headerHeight = header.offsetHeight;
+                    const sectionPosition = section.offsetTop;
+                    window.scrollTo({
+                        top: sectionPosition - headerHeight, behavior: 'smooth' 
+                    });
+                }
+                if (menu && menu.classList.contains('show')) {
+                    menu.classList.remove('show');
+                }
+            }
+    </script>
 </body>
 </html>
