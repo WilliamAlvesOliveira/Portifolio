@@ -1,7 +1,7 @@
 @media screen and (orientation: landscape) {
     .william{
         display: flex;
-        width: 94vw;
+        max-height:var(--tela);
         padding-left: 15vw;
         flex-direction: column;
         justify-content: center;
@@ -30,12 +30,12 @@
         width: 70%;
         border-right: none;
     }
-    
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
     .william{
         padding: 0;
+        max-height: none;
         margin-left: 5PX;
     }
 

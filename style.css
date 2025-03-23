@@ -7,7 +7,7 @@
 }
 
 :root {
-    --tela: calc(100vh - 30px);
+    --tela: calc(100vh - 70px);
 }
 
 
@@ -37,14 +37,9 @@ header > div, .Me {
     gap: 10px;
 }
 
-header img{ 
-    width: 30px;
-    border-radius: 50%;
-}
-
 header p, .Me > h1 {
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
 header ul {
@@ -82,8 +77,6 @@ nav li:hover {
 
 .william {
     margin: 10px 0px;
-    width: 100vw;
-    min-height: var(--tela);
     padding: 10px 10px;
 }
 
@@ -108,58 +101,33 @@ main {
     border-bottom: 1px solid gray;
 }
 
-.grid-list::-webkit-scrollbar{
-    width: 3px;
-}
-
-.grid-list::-webkit-scrollbar-thumb{
-    background-color: white;
-}
-
-.grid-list {
-    margin: auto;
-    width: 80%;
-    padding: 10px 10px;
-    border-bottom: 1px solid gray;
-    max-height: 500px;
-    overflow-y: scroll;
-    border: 1px solid gray;
+main > section{
+    margin: 5px;
+    margin-bottom: 50px;
     border-radius: 20px;
+    padding: 0px 20px;
+    color: black;
 }
 
-.grid-list > li {
-    width: 96%;
+
+section > h3 > a{
+    color: black;
 }
 
-main > h2 {
-    padding: 5px 0;
+main > h2, main > section > h3{
+    margin: 20px 0px;
 }
 
-.grid-list h3 {
-    color: white;
-    text-decoration: underline;
-    text-align: center;
-    padding: 5px;
+#Website{
+    background-color: #A9D7F3;
 }
 
-@media(min-width: 500px) {
-    .grid-list {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
-
-    .li1 {
-        grid-column: 1 / 2;
-    }
+#Dispensa{
+    background-color: rgb(167, 165, 165);
 }
 
-.projeto {
-    background-color: white;
-    width: 100%;
-    aspect-ratio: 500 / 300;
-    border: 2px solid white;
-    border-radius: 30px;
+#Art-Gallery{
+    background-color: #F7CD00;
 }
 
 footer {
@@ -180,13 +148,14 @@ footer {
     margin: 5px 0;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    cursor: pointer;
 }
 
 .redes img {
     width: 80%;
+    border-radius: 50%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
 .redes > p {
