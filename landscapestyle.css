@@ -59,3 +59,83 @@
         font-size: 0.9em;
     }
 }
+
+@media (min-width:1000px){
+    .project-header{
+        width: 100%;
+    }
+
+    .project-header > button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid white;
+        background-color: black;
+        cursor: pointer;
+    }
+
+    .project-header > button:hover{
+        border: blue;
+    }
+    
+    .project-header > button > img{
+        width: 50%;
+    }
+
+    .cel{
+        display: none;
+        grid-template-rows: 1fr 8fr 1fr;
+        position: sticky;
+        right: 0px;
+        top: 60px;
+        margin: 10px 0px;
+        width: 350px;
+        height: 500px;
+        background-color: white;
+        border-radius: 30px;
+    }
+
+    .cel-top, .cel-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cel-top > div{
+        width: 80px;
+        height: 2px;
+        border: 1px solid black;
+        border-radius: 1000px;
+    }
+
+    .cel-screen{
+        margin: auto;
+        width: 96%;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+
+    .cel-screen > iframe{
+        width: 96%;
+        height: 100%;
+    }
+
+    .cel-button > div{
+        padding: 3px 10px;
+        border: 1px solid black;
+        border-radius: 1000px;
+        box-shadow: inset -5px -5px 4px silver;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .cel-button > div:hover{
+        border: 1px solid blue;
+    }
+
+}

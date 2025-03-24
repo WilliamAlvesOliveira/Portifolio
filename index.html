@@ -16,16 +16,16 @@
                 <p>William Alves de Oliveira</p>
             </a>
         </div>
-        <div class='hamburger' onclick="showmenu()">
+        <Button class='hamburger' onclick="showmenu()">
             <span class="material-symbols-outlined">menu</span>
-        </div>
+        </Button>
     </header>
 
     <nav id="menu">
         <ul id="nav-menu">
             <li onclick="goTo('aboutme')" >Sobre mim</li>
             <li onclick="goTo('Website')">Website</li>
-            <li onclick="gpTo('Dispensa')">Dispensa</li>
+            <li onclick="goTo('Dispensa')">Dispensa</li>
             <li onclick="goTo('Art-Gallery')">Art Gallery</li>
             <li onclick="goTo('redes')">Redes</li>
         </ul>
@@ -51,17 +51,111 @@
         <h2>Projetos :</h2>
         
         <section id="Website">
-            <h3><a href="https://williamalvesoliveira.github.io/website/" target="_blank">Projeto Website</a></h3>
+            <div class="project-info">
+                <div class="project-header">
+                    <h3>Projeto Website</h3>
 
-            <p>O projeto Website foi desenvolvido para simular uma página de notícias</p>
+                    <a href="https://williamalvesoliveira.github.io/website/" title="Link para a página We bsite" target="_blank"><img src="imagens/Wlogo.png" alt="Website favcon"></a>
+
+                    <button id="btn-webcel" title="abrir celular" onclick="showcel('webcel')">
+                        <img src="imagens/smarrtphone.png" alt="telefone">
+                        <img  class="eye" src="imagens/eye.png" alt="olho">
+                    </button>
+                </div>
+
+                <p>Este projeto simula uma página de notícias, com um layout moderno e responsivo. A ideia é oferecer uma experiência fluida para os usuários, permitindo fácil navegação entre as matérias e as notícias.</p>
+                
+                <p>🔹 Tecnologias utilizadas: HTML, CSS, JavaScript</p>
+                <p>✔️ Layout responsivo para diferentes dispositivos</p>
+                <p>✔️ Menu de navegação interativo</p>
+                <p>✔️ Design simples e intuitivo</p>
+
+                <p>🔹 Funcionalidades:</p>
+                <p class="text-paragraph">A página contém um menu fixo na parte superior da tela, com opções que exibem uma caixa com os itens quando passamos o mouse sobre elas ou as selecionamos.</p>
+                <p class="text-paragraph">A estrutura é dividida em duas colunas: uma para as matérias e outra para as notícias. A coluna de notícias possui rolagem independente, permitindo uma navegação fluida. Além disso, há pequenos elementos estilizados, como uma imagem com fundo desfocado, uma propaganda com bordas animadas e um banner fixo ao lado do conteúdo assim que a coluna de notícias chega ao fim.</p>
+                <p class="text-paragraph">O site também conta com alguns jogos interativos: um jogo para adivinhar o número escolhido pelo computador, com diferentes níveis de dificuldade, um jogo da velha e um jogo baseado no clássico Missile Command, também com seleção de dificuldade.</p>
+                <p>📌 Conclusão:</p>
+                <p class="text-paragraph">Esse projeto foi desenvolvido com o objetivo de explorar diferentes técnicas de layout, interatividade e estilos visuais, criando uma experiência dinâmica para o usuário. Além do design funcional, os jogos adicionam um toque de entretenimento, tornando a página mais envolvente. Continuarei aprimorando o projeto, testando novas ideias e aperfeiçoando suas funcionalidades.</p>
+                
+                <p>🔗 Acesse o projeto <a href="https://williamalvesoliveira.github.io/website/" title="Link para a página We bsite" target="_blank">https://williamalvesoliveira.github.io/website/</a></p>
+            </div>
+
+            <div id='webcel' class="cel">
+                <div class="cel-top">
+                    <div></div>
+                </div>
+                <div class="cel-screen">
+                    <iframe src="https://williamalvesoliveira.github.io/website/" frameborder="1"></iframe>
+                </div>
+                <div class="cel-button">
+                    <div onclick="closecel('webcel')">fechar</div>
+                </div>
+            </div>
         </section>
 
         <section id="Dispensa">
-            <h3>Projeto Dispensa</h3>
+            <div class="project-info">
+                <h3>Projeto Dispensa</h3>
+
+                <p>🔹 Python, Custon Tkinter</p>
+                <p>✔️ sistema de validação de dados</p>
+                <p>✔️ Design simples e intuitivo</p>
+                
+                <p><strong>O projeto Gestor de Dispensa</strong>, foi desenvolvido com o objetivo de ajudar na organização e controle de itens de uma dispensa doméstica. O app permite aos usuários cadastrar produtos, definir quantidades e controlar quando é necessário reabastecer itens essenciais.</p>
+
+                <p><strong>🔹 Funcionalidades:</strong></p>
+                <p class="text-paragraph">A interface gráfica, desenvolvida com a biblioteca <em>CustomTkinter</em>, proporciona uma navegação simples e intuitiva, com uma visão clara de todos os itens cadastrados na dispensa.</p>
+                <p class="text-paragraph">O app permite adicionar, editar e excluir produtos facilmente. Para cada item, é possível definir a quantidade disponível, a categoria (essencial ou não) e o período de compra recomendado, com alertas automáticos para avisar quando o item precisa ser reabastecido.</p>
+                <p class="text-paragraph">A funcionalidade de filtro facilita a busca por produtos essenciais, enquanto o sistema de categorias organiza melhor os itens, oferecendo uma visão geral clara de cada tipo de produto armazenado.</p>
+                <p class="text-paragraph">Além disso, a aplicação oferece a possibilidade de exportar os dados da dispensa para uma lista em formato de texto, facilitando o planejamento de compras e a organização de receitas.</p>
+
+                <p><strong>Conclusão:</strong></p>
+                <p class="text-paragraph">O <strong>Gestor de Dispensa</strong> é uma solução prática e eficiente para quem busca manter sua despensa organizada e otimizar o controle de estoque em casa. Com funcionalidades que combinam usabilidade e praticidade, o app oferece uma maneira rápida e eficaz de garantir que itens essenciais não faltem, além de fornecer uma visão detalhada do que está disponível e do que precisa ser reposto. É uma ferramenta útil para qualquer pessoa que deseje manter o controle sobre os itens de sua casa de forma ágil e simples.</p>
+
+            </div>
         </section>
 
         <section id="Art-Gallery">
-            <h3><a href="https://williamalvesoliveira.github.io/Art-Gallery/" target="_blank">Projeto Art Gallery</a></h3>
+            <div class="project-info">
+
+                <div class="project-header">
+                    <h3>Projeto Art Gallery</h3> <a href="https://williamalvesoliveira.github.io/Art-Gallery/" title="Link para págoma ART-Gallery" target="_blank"><img src="imagens/Arrlogo.png" alt="Art-Gallery favcon"></a>
+
+                    <button id="btn-artcel" title="abrir celular" onclick="showcel('artcel')">
+                        <img src="imagens/smarrtphone.png" alt="telefone">
+                        <img  class="eye" src="imagens/eye.png" alt="olho">
+                    </button>
+                </div>
+                
+               <p>O projeto <strong>Art Gallery</strong> foi desenvolvido com o objetivo de criar uma plataforma interativa e envolvente para a exibição de imagens. Cada seção do site foi cuidadosamente projetada para aplicar diferentes técnicas de exibição, proporcionando uma experiência única para o usuário. As imagens são organizadas de acordo com seu estilo e tema, permitindo que o visitante explore uma variedade de representações artísticas, cada uma com sua própria forma de apresentação visual. Além disso, o layout foi pensado para destacar o caráter individual de cada obra, criando uma sensação de imersão na arte ao mesmo tempo em que oferece uma navegação intuitiva e dinâmica.</p> 
+
+               <p>🔹 Tecnologias utilizadas: HTML, CSS, JavaScript, React</p>
+               <p>✔️ Layout responsivo para diferentes dispositivos</p>
+               <p>✔️ Design moderno e intuitivo</p>
+                
+                <p>🔹 <strong>Funcionalidades:</strong></p>
+                
+                <p class="text-paragraph">O site conta com um <strong>carrossel de imagens</strong> que realiza trocas automáticas, além de botões interativos para seleção, proporcionando uma navegação dinâmica e agradável entre as imagens.</p>
+                <p class="text-paragraph">Há uma seção dedicada a imagens de animais e plantas nativas do Brasil, que utiliza um layout <strong>Masonry</strong> para otimizar o espaço e adaptar o tamanho das imagens, garantindo uma visualização harmônica e uma experiência visual agradável.</p>
+                <p class="text-paragraph">Na <strong>RPG Cards</strong>, cada personagem é apresentado com uma imagem de fundo e informações que são atualizadas dinamicamente. Os dados mudam de acordo com a interação do usuário, enquanto a exibição varia conforme o espaço disponível e a orientação da tela, tornando a navegação fluida e adaptável.</p>
+                <p class="text-paragraph">Além disso, o site apresenta <strong>cards modulares</strong> que exibem imagens e trechos de músicas. O posicionamento desses cards é gerado aleatoriamente a cada visita, oferecendo uma experiência única e diversificada para o usuário a cada interação.</p>
+
+                <p><strong>Conclusão:</strong></p>
+                <p class="text-paragraph">O projeto <strong>Art Gallery</strong> foi desenvolvido para proporcionar uma experiência visual única, onde a diversidade de técnicas de exibição de imagens cria uma interação envolvente e dinâmica com o usuário. Com seções adaptativas, como o carrossel, o layout <em>Masonry</em> e os cards modulares, o site oferece uma experiência personalizada e imersiva a cada visita, tornando-se uma verdadeira galeria de arte digital. A combinação dessas funcionalidades não só exibe conteúdo de forma eficaz, mas também oferece uma experiência de navegação interativa e agradável, refletindo criatividade e inovação.</p>
+
+                <p>🔗 Acesse o projeto <a href="https://williamalvesoliveira.github.io/Art-Gallery" title="Link para a página Art Gallry" target="_blank">https://williamalvesoliveira.github.io/Art-Galley</a></p>
+            </div>
+
+            <div id="artcel" class="cel">
+                <div class="cel-top">
+                    <div></div>
+                </div>
+                <div class="cel-screen">
+                    <iframe src="https://williamalvesoliveira.github.io/Art-Gallery/" frameborder="1"></iframe>
+                </div>
+                <div class="cel-button">
+                    <div onclick="closecel('artcel')">fechar</div>
+                </div>
         </section>
         
     </main>
@@ -101,25 +195,7 @@
 
     </footer>
 
-    <script>
-            function showmenu(){
-                menu.classList.toggle('show');
-            }
-
-            function goTo(id) {
-                const section = document.getElementById(id);
-                 const header = document.querySelector('header');
-                if (section && header) {
-                    const headerHeight = header.offsetHeight;
-                    const sectionPosition = section.offsetTop;
-                    window.scrollTo({
-                        top: sectionPosition - headerHeight, behavior: 'smooth' 
-                    });
-                }
-                if (menu && menu.classList.contains('show')) {
-                    menu.classList.remove('show');
-                }
-            }
+    <script src="script.js">
     </script>
 </body>
 </html>
