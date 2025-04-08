@@ -4,10 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.3em;
+    scroll-behavior: smooth;
 }
 
 :root {
     --tela: calc(100vh - 70px);
+    --menuPosition: 0   px;
     --bg-color: rgb(40, 40, 40);
     --text-color: white;
     --border-color: gray;
@@ -36,6 +39,10 @@ header {
     border-bottom: 2px solid var(--border-color);
 }
 
+header > a{
+    text-align: center;
+}
+
 header div, .Me {
     display: flex;
     align-items: center;
@@ -58,21 +65,79 @@ header a {
     text-decoration: none;
 }
 
+#toggle-tema {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 82px;  
+    background-color: var(--bg-color);
+    padding: 1px 4px;
+    border-radius: 1000px;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    position: relative;
+    cursor: pointer;
+}
+  
+#toggle-tema img {
+    width: 18px;
+    z-index: 2;
+    transition: transform 0.6s ease, left 0.6s ease;
+}
+  
+.texto-tema {
+    position: absolute;
+    left: 30px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    font-weight: bold;
+    pointer-events: none;
+}
+  
+.texto-escuro {
+    opacity: 1;
+}
+
+.tema-claro .texto-escuro {
+    opacity: 0;
+}
+
+.tema-claro .texto-claro {
+    opacity: 1;
+}
+
+.tema-claro #toggle-tema img {
+    transform: rotate(180deg);
+}   
+  
+
+
 .hamburger {
     background-color: var(--bg-color);
+    padding: 0px 3px;
     color: var(--text-color);
+    font-weight: bolder;
     cursor: pointer;
+}
+
+.william{
+    max-width: 2000px;
 }
 
 .william img {
     border-radius: 30px 0px 30px 0px;
 }
 
+.william h1{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
 #menu {
     display: none;
     z-index: 1;
     position: sticky;
-    top: 52px;
+    top: var(--menuPosition);
     max-height: 60vh;
     opacity: 0;
     transition: all 0.3s ease;
@@ -90,6 +155,8 @@ nav ul {
     position: absolute;
     right: 0;
     width: 200px;
+    border-left: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
     border-bottom-left-radius: 30px;
     overflow: hidden;
 }
@@ -101,6 +168,7 @@ nav li {
     padding: 10px 25px;
     text-align: right;
     border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav li:hover {
@@ -116,7 +184,7 @@ nav li:hover {
 #aboutme {
     margin-left: 20px;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid var(--border-color);
     border-bottom: none;
     border-top-left-radius: 20px;
 }
@@ -130,8 +198,9 @@ main {
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 0 30px 0 30px;
-    border-top: 1px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    overflow-wrap: break-word;
 }
 
 main > section {
@@ -141,7 +210,7 @@ main > section {
     margin: 5px 0 50px;
     border-radius: 20px;
     padding: 0 20px;
-    color: black;
+    color: #111;
 }
 
 main p{
@@ -154,6 +223,16 @@ main p{
 
 .project-info > h3 > a {
     color: black;
+}
+
+hr {
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--bg-color);
+    border-radius: 0px 0px 30px 0px;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 40px
 }
 
 main > h2, .project-info > h3 {
@@ -185,7 +264,10 @@ main > h2, .project-info > h3 {
 #Dispensa { background-image:linear-gradient(to bottom right, rgb(236, 234, 234),rgb(167, 165, 165)) ; }
 #Art-Gallery { background-image: linear-gradient(to bottom right, #FFE460 87%, #F7CD00);}
 
-.cel { display: none; }
+.cel { 
+    display: none;
+    border: 1px solid rgba(0, 0, 0, 0.251);
+}
 
 footer {
     margin-bottom: 10px;

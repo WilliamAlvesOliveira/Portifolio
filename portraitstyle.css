@@ -13,14 +13,25 @@
     }
     .william img {
         position: relative;
-        top: -30px;
+        top: -10px;
         width: 70vw;
         z-index: -1;
     }
 
     #aboutme{
         position: relative;
-        top:  -60px;
+        top:  -30px;
         text-align: right;
+    }
+
+    #aboutme > h2{
+        margin-top: 10px;
+        text-align: right;
+    }
+}
+
+@media(max-width:200px){
+    header > div{
+        flex-direction: column;
     }
 }

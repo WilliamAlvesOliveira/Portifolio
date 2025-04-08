@@ -7,18 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="portraitstyle.css">
     <link rel="stylesheet" href="landscapestyle.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
     <header>
+        <a href="#">William Alves de Oliveira</a>
         <div>
-            <a href="#">
-                <p>William Alves de Oliveira</p>
-            </a>
+            <button id="toggle-tema">
+                <span class="texto-tema texto-escuro">Escuro</span>
+                <img src="imagens/yin-yang.png" alt="yin-yang png">
+                <span class="texto-tema texto-claro">Claro</span>
+              </button>
+            <button class='hamburger' aria-label="Abrir menu" onclick="showmenu()">☰</button>
         </div>
-        <Button class='hamburger' onclick="showmenu()">
-            <span class="material-symbols-outlined">menu</span>
-        </Button>
     </header>
 
     <nav id="menu">
@@ -32,18 +32,18 @@
     </nav>
 
     <div class="william">
-        <div>
-            <h1>William Alves de Oliveira</h1>    
-            <img src="imagens/minhafoto.jpg" alt="William Alves">
-        </div>
+        <h1>William Alves de Oliveira</h1>    
+        <img src="imagens/minhafoto.jpg" alt="William Alves">
 
         <section id="aboutme">
             <h2>Sobre mim</h2>
-            <p>Meu nome é William, estou atualmente estudando para me tornar um desenvolvedor fullstack. Embora meu foco atual esteja nos estudos de front-end (HTML,CASS e JavaScript), também possuo conhecimentos básicos em Python e PHP.</p>
+            <p>Olá! Me chamo William e estou em transição de carreira para me tornar um desenvolvedor fullstack. No momento, estou focado principalmente no front-end ( estudando HTML, CSS e JavaScript), mas também tenho conhecimentos em Python e PHP.</p>
 
-            <p>Estou determinado a ingressar no mercado de programação, aplicando minha disciplina, foco e proatividade para alcançar meus objetivos.</p>
-                
-            <p>Acredito que minha dedicação aos estudos me tornam um candidato promissor na área de desenvolvimento. Estou ansioso para contribuir com projetos inovadores e continuar aprendendo e crescendo como desenvolvedor.</p>
+            <p>Gosto de ver ideias tomando forma na tela. Trabalhar com cores, imagens e design tem despertado uma paixão verdadeira por desenvolvimento visual, mesmo sem deixar de lado o interesse pelo back-end.</p>
+
+            <p>Com disciplina, foco e proatividade, venho me dedicando todos os dias para entrar de vez no mercado de tecnologia. Estou sempre buscando aprender mais, experimentar técnicas novas e contribuir com projetos criativos e bem pensados.</p>
+
+            <p>Acredito que minha trajetória única e meu comprometimento com o aprendizado fazem de mim um desenvolvedor em constante evolução — pronto para somar e crescer junto com boas ideias.</p>
         </section>
     </div>
 
@@ -80,6 +80,7 @@
                 <p>🔗 Acesse o projeto <a href="https://williamalvesoliveira.github.io/website/" title="Link para a página We bsite" target="_blank">https://williamalvesoliveira.github.io/website/</a></p>
             </div>
 
+
             <div id='webcel' class="cel">
                 <div class="cel-top">
                     <div></div>
@@ -92,6 +93,8 @@
                 </div>
             </div>
         </section>
+
+        <hr>
 
         <section id="Dispensa">
             <div class="project-info">
@@ -114,6 +117,8 @@
 
             </div>
         </section>
+
+        <hr>
 
         <section id="Art-Gallery">
             <div class="project-info">
@@ -151,7 +156,7 @@
                     <div></div>
                 </div>
                 <div class="cel-screen">
-                    <iframe src="https://williamalvesoliveira.github.io/Art-Gallery/" frameborder="1"></iframe>
+                    <iframe src="https://williamalvesoliveira.github.io/art-gallery/" frameborder="1"></iframe>
                 </div>
                 <div class="cel-button">
                     <div onclick="closecel('artcel')">fechar</div>
@@ -161,7 +166,7 @@
     </main>
 
     <footer id="redes">
-        <p>Minhas Redes</p>
+        <p style="margin-bottom: 25px;">Minhas Redes:</p>
 
         <div class="Minhas-Redes">
             <a href="https://www.linkedin.com/in/william-oliveira-a047a7268/" target="_blank">

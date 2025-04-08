@@ -1,32 +1,26 @@
 @media screen and (orientation: landscape) {
     .william{
         display: flex;
-        max-height:var(--tela);
         padding-left: 15vw;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
     }
 
-    .william > div{
-        position: relative;
-    }
-
-    .william > div > h1{
-        position: relative;
-        top: 50px;
-        left: 380px;
+    .william > h1{
+        margin: auto;
+        padding-top: 15px;
         font-size: 2.5em;
     }
 
-    .william  > div > img{
+    .william  > img{
         width: 400px;
     }
     
     #aboutme {
         position: relative;
-        top: -40px;
-        left: 200px;
+        margin: auto;
+        top: -30px;
         width: 70%;
         border-right: none;
     }
@@ -46,14 +40,15 @@
         font-size: 2em;
     }
 
-    .william  > div > img{
+    .william  > img{
         width: 250px;
+        max-width: 70vw;
     }
     
     #aboutme {
         position: relative;
-        top: -40px;
-        left: 130px;
+        top: -15px;
+        right: 0px;
         width: 80%;
         border-right: none;
         font-size: 0.9em;
@@ -117,7 +112,6 @@
         width: 96%;
         height: 100%;
         border-radius: 5px;
-        border: 1px solid black;
     }
 
     .cel-screen > iframe{
