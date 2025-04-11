@@ -14,6 +14,29 @@ function atualizarMenuPosition() {
   document.documentElement.style.setProperty('--menuPosition', altura);
 }
 
+// =====================================
+// Layout: ajustando imagens para o grid
+// =====================================
+document.addEventListener("DOMContentLoaded", () => {
+  // Tema salvo
+  const temaSalvo = localStorage.getItem('tema');
+  if (temaSalvo === 'claro') ativarTemaClaro();
+  else ativarTemaEscuro();
+
+  // Grid
+  const containers = document.querySelectorAll('.grid-images');
+  containers.forEach(container => {
+    container.querySelectorAll('img').forEach(img => {
+      const src = img.getAttribute('src');
+      if (!src) return;
+
+      const fileName = src.split('/').pop().split('.')[0];
+      img.classList.add(fileName);
+      img.style.gridArea = fileName;
+    });
+  });
+});
+
 // ==============================
 //       Tema claro/escuro
 // ==============================
@@ -40,8 +63,10 @@ function alternarTema() {
 
   if (atual === '#f8f9fa') {
     ativarTemaEscuro();
+    localStorage.setItem('tema', 'escuro');
   } else {
     ativarTemaClaro();
+    localStorage.setItem('tema', 'claro');
   }
 }
 
@@ -69,7 +94,7 @@ function goTo(id) {
     });
   }
 
-  if (menu && menu.classList.contains('show')) {
+  if (menu?.classList.contains('show')) {
     menu.classList.remove('show');
   }
 }
@@ -104,6 +129,8 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible'); // volta a ficar invisível
     }
   });
 }, {
@@ -118,23 +145,3 @@ fadeEls.forEach(el => observer.observe(el));
 window.addEventListener('load', atualizarMenuPosition);
 window.addEventListener('resize', atualizarMenuPosition);
 toggleTema.addEventListener('click', alternarTema);
-
-
-window.addEventListener('load', atualizarMenuPosition);
-window.addEventListener('resize', atualizarMenuPosition);
-toggleTema.addEventListener('click', alternarTema);
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const containers = document.querySelectorAll('.grid-images');
-
-  containers.forEach(container => {
-    container.querySelectorAll('img').forEach(img => {
-      const src = img.getAttribute('src');
-      const fileName = src.split('/').pop().split('.')[0]; // ex: 'materia'
-
-      img.classList.add(fileName);           // adiciona a classe com o nome da imagem
-      img.style.gridArea = fileName;         // define o grid-area no estilo inline
-    });
-  });
-});

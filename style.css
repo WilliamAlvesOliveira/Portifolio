@@ -263,12 +263,16 @@ main > section {
     margin-bottom: 0px;
 }
 
+main{
+    margin: auto;
+    max-width: 1500px;
+}
+
 main > h2{
     border-bottom: 1px solid var(--border-color)
 }
 
 main p{
-    max-width: 1500;
     margin-bottom: 20px;
 }
 
@@ -387,7 +391,7 @@ main > h2, .project-info > h3 {
 
 footer {
     margin-bottom: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .Minhas-Redes {
