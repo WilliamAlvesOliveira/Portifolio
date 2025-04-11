@@ -118,3 +118,23 @@ fadeEls.forEach(el => observer.observe(el));
 window.addEventListener('load', atualizarMenuPosition);
 window.addEventListener('resize', atualizarMenuPosition);
 toggleTema.addEventListener('click', alternarTema);
+
+
+window.addEventListener('load', atualizarMenuPosition);
+window.addEventListener('resize', atualizarMenuPosition);
+toggleTema.addEventListener('click', alternarTema);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const containers = document.querySelectorAll('.grid-images');
+
+  containers.forEach(container => {
+    container.querySelectorAll('img').forEach(img => {
+      const src = img.getAttribute('src');
+      const fileName = src.split('/').pop().split('.')[0]; // ex: 'materia'
+
+      img.classList.add(fileName);           // adiciona a classe com o nome da imagem
+      img.style.gridArea = fileName;         // define o grid-area no estilo inline
+    });
+  });
+});

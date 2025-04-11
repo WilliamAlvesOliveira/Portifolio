@@ -30,6 +30,14 @@
         margin-top: 10px;
         text-align: right;
     }
+
+    .website-grid3{
+        grid-template-areas: 
+        "advinhacaoprint advinhacaoprint"
+        "missilemenu velhamob"
+        "missilegame missilegame";
+        grid-template-columns: 50% 50%;
+    }
 }
 
 @media(max-width:200px){

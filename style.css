@@ -110,7 +110,6 @@ header a {
     transform: rotate(180deg);
 }   
   
-
 .hamburger {
     background-color: var(--bg-color);
     padding: 0px 3px;
@@ -121,10 +120,6 @@ header a {
 
 .id{
     display: flex;
-}
-
-.william{
-    max-width: 2000px;
 }
 
 .william img {
@@ -180,6 +175,7 @@ nav li:hover {
 }
 
 .william {
+    max-width: 2000px;
     margin: 10px 0;
     padding: 10px;
 }
@@ -272,6 +268,7 @@ main > h2{
 }
 
 main p{
+    max-width: 1500;
     margin-bottom: 20px;
 }
 
@@ -281,6 +278,45 @@ main p{
 
 .project-info > h3 > a {
     color: black;
+}
+
+.project-info img{
+    width: 96%;
+    height: 96%;
+    object-fit: contain;
+}
+
+.website-grid1{
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    display: grid;
+    grid-template-areas:
+        "initdesk initmob"
+        "webmenu initmob";
+    grid-template-columns: 65% 35%;
+}
+
+.website-grid2{
+    margin: auto;
+    width: 90%;
+    max-width: 300px;
+    display: grid;
+    grid-template-areas:
+        "materia animateborder"
+        "blur blur";
+    grid-template-columns: 1fr 1fr;
+}
+
+.website-grid3{
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    display: grid;
+    grid-template-areas:
+        "velhamob advinhacaoprint missilemenu"
+        "velhamob missilegame missilemenu";
+    grid-template-columns: 25% 50% 25%;
 }
 
 hr {
