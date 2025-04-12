@@ -34,7 +34,7 @@
     .website-grid3{
         grid-template-areas: 
         "advinhacaoprint advinhacaoprint"
-        "missilemenu velhamob"
+        "velhamob missilemenu"
         "missilegame missilegame";
         grid-template-columns: 50% 50%;
     }
