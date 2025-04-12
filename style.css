@@ -118,12 +118,12 @@ header a {
     cursor: pointer;
 }
 
-.id{
-    display: flex;
-}
-
 .william{
     min-height: var(--tela);
+}
+
+.id{
+    display: flex;
 }
 
 .william img {

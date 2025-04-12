@@ -11,7 +11,8 @@
         align-self: center;
         justify-self: flex-start;
         font-size: 2.5em;
-        margin: 0vw 8vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
         border-bottom: 1px solid var(--border-color);
     }
 
@@ -22,7 +23,7 @@
     #aboutme {
         position: relative;
         margin: auto;
-        top: -25px;
+        top: -10px;
         width: 70%;
         border-right: none;
     }
@@ -39,6 +40,11 @@
 
     .william > div > h1{
         font-size: 2em;
+    }
+
+    .william  > img{
+        width: 250px;
+        max-width: 70vw;
     }
     
     #aboutme {
