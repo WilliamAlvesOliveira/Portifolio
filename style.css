@@ -68,46 +68,54 @@ header a {
 #toggle-tema {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 82px;  
+    justify-content: center;
+    width: 82px;
+    height: 25px;
     background-color: var(--bg-color);
-    padding: 1px 4px;
     border-radius: 1000px;
     border: 1px solid var(--text-color);
     color: var(--text-color);
+    overflow: hidden;
     position: relative;
     cursor: pointer;
 }
   
 #toggle-tema img {
-    width: 24px;
-    z-index: 2;
-    transition: transform 0.6s ease, left 0.6s ease;
+    height: 100%;
+    transition: transform 0.7s ease;
 }
   
 .texto-tema {
-    position: absolute;
-    left: 30px;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-    font-weight: bold;
-    pointer-events: none;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    transition: max-width 0.6s ease, opacity 0.8s ease;
+    max-width: 100%;
+    opacity: 1;
 }
   
 .texto-escuro {
+    width: 100%;
     opacity: 1;
 }
 
+.texto-claro{
+    max-width: 0;
+}
+
 .tema-claro .texto-escuro {
+    max-width: 0;
     opacity: 0;
 }
 
 .tema-claro .texto-claro {
+    max-width: 100%;
     opacity: 1;
 }
 
 .tema-claro #toggle-tema img {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
 }   
   
 .hamburger {
