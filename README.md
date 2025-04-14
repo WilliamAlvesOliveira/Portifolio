@@ -47,4 +47,4 @@ Você pode me encontrar e acompanhar meus projetos em:
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/william-oliveira-a047a7268/)
 - 🧑‍💻 [GitHub](https://github.com/WilliamAlvesOliveira)
-- 📧 E-mail: 27will.ramone@gmail.com
+- 📧 E-mail: 27will.ramonepro@gmail.com

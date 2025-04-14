@@ -38,6 +38,13 @@
         "missilegame missilegame";
         grid-template-columns: 50% 50%;
     }
+
+    .dispensa-grid2{
+        grid-template-areas:
+        "dispensa-addscreen dispensa-addscreen"
+        "dispensa-editscreen dispensa-removescreen";
+        grid-template-columns: 50% 50%;
+    }
 }
 
 @media(max-width:200px){

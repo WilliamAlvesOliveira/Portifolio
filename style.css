@@ -302,11 +302,15 @@ main p{
     object-fit: contain;
 }
 
-.website-grid1{
+.grid-images{
     margin: auto;
     width: 90%;
-    max-width: 500px;
     display: grid;
+    margin-bottom: 15px;
+}
+
+.website-grid1{
+    max-width: 500px;
     grid-template-areas:
         "initdesk initmob"
         "webmenu initmob";
@@ -314,10 +318,7 @@ main p{
 }
 
 .website-grid2{
-    margin: auto;
-    width: 90%;
     max-width: 300px;
-    display: grid;
     grid-template-areas:
         "materia animateborder"
         "blur blur";
@@ -325,14 +326,33 @@ main p{
 }
 
 .website-grid3{
-    margin: auto;
-    width: 90%;
     max-width: 600px;
-    display: grid;
     grid-template-areas:
         "velhamob advinhacaoprint missilemenu"
         "velhamob missilegame missilemenu";
     grid-template-columns: 25% 50% 25%;
+}
+
+.dispensa-grid1{
+    max-width: 600px;
+    grid-template-areas:
+        "dispensa-main";
+}
+
+.dispensa-grid2{
+    max-width: 700px;
+    grid-template-areas: 
+    "dispensa-addscreen dispensa-editscreen"
+    "dispensa-addscreen dispensa-removescreen";
+    grid-template-columns: 65% 35%;
+}
+
+.dispensa-grid3{
+    max-width: 600px;
+}
+
+.dispensa-grid4{
+    max-width: 600px;
 }
 
 hr {
