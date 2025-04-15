@@ -25,11 +25,8 @@
         margin: auto;
         top: -10px;
         width: 70%;
-        border-right: none;
     }
-
 }
-
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
     .william{

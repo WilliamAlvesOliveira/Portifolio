@@ -45,6 +45,23 @@
         "dispensa-editscreen dispensa-removescreen";
         grid-template-columns: 50% 50%;
     }
+
+    .art1{
+        grid-template-areas: 
+        "carrosselponydesk carrosselponydesk carrosselgirmob"
+        "carroseldragon carroseldragon carrosselgirmob"
+        "carrosselponymob  artmain artmain";
+        grid-template-columns: 32% 32% 36%;
+        grid-template-rows: 32% 32% 36% ;
+    }
+
+    .art3{
+        grid-template-areas: 
+        "rpgmain rpgbarbarian"
+        "rpgmain  rpgmob"
+        "rpgdruid rpgmob";
+        grid-template-columns: 50% 50%;
+    }
 }
 
 @media(max-width:200px){

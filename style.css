@@ -201,6 +201,7 @@ nav li:hover {
     padding: 10px;
     border: 1px solid var(--border-color);
     border-bottom: none;
+    border-right: none;
     border-top-left-radius: 20px;
 }
 
@@ -257,6 +258,11 @@ main > section {
     border: 1px solid var(--border-color);
     border-radius: 10px 0px 10px 0px;
     color: white;
+}
+
+.stack:hover > img{
+    width: 68%;
+    transition: 0.5s;
 }
 
 .stack > img{
@@ -355,6 +361,38 @@ main p{
     max-width: 600px;
 }
 
+.art1{
+    max-width: 1000px;
+    grid-template-areas:
+    "artmain carrosselgirmob carroseldragon carrosselponymob"
+    "artmain carrosselgirmob carrosselponydesk carrosselponymob";
+    grid-template-columns: 42% 13% 28% 17%;
+    grid-template-rows: 50% 50%;
+}
+
+.art2{
+    max-width: 380px;
+    grid-template-areas:
+    "masonrymob masonrymodal"
+    "masonrylandscape masonrylandscape";
+    grid-template-rows: 65% 35%;
+}
+
+.art3{
+    max-width: 800px;
+    grid-template-areas: 
+    "rpgmain rpgdruid rpgmob"
+    "rpgmain rpgbarbarian rpgmob";
+    grid-template-columns: 28% 44% 28%;
+}
+
+.art4{
+    max-width: 800px;
+    grid-template-areas:
+    "verseslandscape versesmob";
+    grid-template-columns: 80% 20%;
+    
+}
 hr {
     margin: auto;
     width: 100%;
