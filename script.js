@@ -202,7 +202,7 @@ closeBtn.addEventListener("click", () => {
 
 // Fechar ao clicar fora da imagem
 modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
+  if (e.target === modal || e.target.classList.contains("modal-container")) {
     modal.classList.add("hidden");
   }
 });
