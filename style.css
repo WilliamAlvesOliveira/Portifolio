@@ -125,8 +125,26 @@ header a {
     background-color: var(--bg-color);
     padding: 0px 3px;
     color: var(--text-color);
+    font-size: 18px;
     font-weight: bolder;
+    border-radius: 2px;
     cursor: pointer;
+}
+
+.tema-claro .hamburger{
+    background-color: #DDE4E9;
+    border-bottom: 1px solid #B3C3CE;
+    border-right: 1px solid #B3C3CE;
+    border-top:1px solid #ffffff;
+    border-left:1px solid #ffffff;
+}
+
+.tema-claro .hamburger:active{
+    background-color: #DDE4E9;
+    border-top: 1px solid #B3C3CE;
+    border-left: 1px solid #B3C3CE;
+    border-bottom:1px solid #ffffff;
+    border-right:1px solid #ffffff;
 }
 
 .william{
@@ -172,7 +190,7 @@ nav ul {
     border-left: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     border-bottom-left-radius: 30px;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
 nav li {
@@ -307,6 +325,11 @@ main p{
     height: 96%;
     object-fit: contain;
     align-self: center;
+    transition: transform 0.3s;
+}
+
+.project-info img:hover{
+    transform: scale(1.05);
 }
 
 .grid-images{
@@ -515,4 +538,63 @@ footer {
 
 .redes > p {
     font-size: 10px;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    inset: 0;
+    z-index: 3;
+  }
+
+.modal-container{
+    width: 600px;
+    max-width: 90%;
+    height: 600px;
+    max-height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+  
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+  
+.hidden {
+    display: none;
+}
+  
+.close{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.nav{
+    color: white;
+    font-size: 34px;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s;
+}
+  
+.close {
+    top: 20px;
+    right: 30px;
+}
+  
+@media (hover: hover) and (pointer: fine) {
+    .close:hover,.nav:hover {
+        color: #f44336;
+    }
 }

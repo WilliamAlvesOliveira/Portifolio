@@ -70,6 +70,18 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 26% 48% 26%;
     }
+
+    .modal img{
+        max-width: 80%;
+    }
+
+    .nav.left {
+        left: 10px;
+    }
+
+    .nav.right {
+        right: 10px;
+    }
 }
 
 @media(max-width:200px){
