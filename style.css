@@ -306,6 +306,7 @@ main p{
     width: 96%;
     height: 96%;
     object-fit: contain;
+    align-self: center;
 }
 
 .grid-images{
@@ -362,12 +363,10 @@ main p{
 }
 
 .art1{
-    max-width: 1000px;
+    max-width: 600px;
     grid-template-areas:
-    "artmain carrosselgirmob carroseldragon carrosselponymob"
-    "artmain carrosselgirmob carrosselponydesk carrosselponymob";
-    grid-template-columns: 42% 13% 28% 17%;
-    grid-template-rows: 50% 50%;
+    "artmain carrosselgirmob carrosselponymob";
+    grid-template-columns: 62% 16% 22%;
 }
 
 .art2{
@@ -379,7 +378,7 @@ main p{
 }
 
 .art3{
-    max-width: 800px;
+    max-width: 600px;
     grid-template-areas: 
     "rpgmain rpgdruid rpgmob"
     "rpgmain rpgbarbarian rpgmob";
@@ -387,12 +386,29 @@ main p{
 }
 
 .art4{
-    max-width: 800px;
+    max-width: 600px;
     grid-template-areas:
     "verseslandscape versesmob";
     grid-template-columns: 80% 20%;
     
 }
+
+.art5{
+    max-width: 600px;
+    grid-template-areas: 
+    "rockermob rockerlandscape"
+    "rockermob rockerefect";
+    grid-template-columns: 37% 63%;
+}
+
+.art6{
+    max-width: 600px;
+    grid-template-areas:
+    "magiclandscape magicmob magicmobeffect"
+    "magiclandefect magicmob magicmobeffect";
+    grid-template-columns: 48% 26% 26%;
+}
+
 hr {
     margin: auto;
     width: 100%;

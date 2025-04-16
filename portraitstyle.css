@@ -48,11 +48,10 @@
 
     .art1{
         grid-template-areas: 
-        "carrosselponydesk carrosselponydesk carrosselgirmob"
-        "carroseldragon carroseldragon carrosselgirmob"
-        "carrosselponymob  artmain artmain";
-        grid-template-columns: 32% 32% 36%;
-        grid-template-rows: 32% 32% 36% ;
+        "artmain artmain"
+        "carrosselgirmob carrosselponymob";
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 41% 59%;
     }
 
     .art3{
@@ -61,6 +60,15 @@
         "rpgmain  rpgmob"
         "rpgdruid rpgmob";
         grid-template-columns: 50% 50%;
+    }
+
+    .art6{
+        grid-template-areas:
+        "magiclandscape magiclandscape"
+        "magicmob magicmobeffect"
+        "magiclandefect magiclandefect";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 26% 48% 26%;
     }
 }
 
