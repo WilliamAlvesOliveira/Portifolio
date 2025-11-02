@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    line-height: 1.3em;
+    line-height: 1.6em;
     scroll-behavior: smooth;
 }
 
@@ -308,7 +308,14 @@ main > h2{
     border-bottom: 1px solid var(--border-color)
 }
 
+.project-header{
+    max-width: 800px;
+    margin: 5px auto 20px auto;
+}
+
 main p{
+    margin: auto;
+    max-width:800px ;
     margin-bottom: 20px;
 }
 
