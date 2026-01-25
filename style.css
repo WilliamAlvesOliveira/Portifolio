@@ -9,7 +9,6 @@
 }
 
 :root {
-    --tela: calc(100vh - 70px);
     --menuPosition: 0   px;
     --bg-color: rgb(40, 40, 40);
     --text-color: white;
@@ -23,6 +22,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s ease; 
 }
 
 header {
@@ -147,10 +147,6 @@ header a {
     border-right:1px solid #ffffff;
 }
 
-.william{
-    min-height: var(--tela);
-}
-
 .id{
     display: flex;
     width: 100%;
@@ -203,9 +199,14 @@ nav li {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+nav li:last-child{
+    border-bottom: none;
+}
+
 nav li:hover {
     background-color: var(--menu-hover);
     color: var(--text-color);
+    font-weight: bolder;
 }
 
 .william {
@@ -570,7 +571,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    
 }
   
 .modal img {
@@ -598,11 +599,13 @@ footer {
     cursor: pointer;
     user-select: none;
     transition: color 0.3s;
+    padding: 50px 20px;
 }
   
 .close {
     top: 20px;
     right: 30px;
+    padding: 10px;
 }
   
 @media (hover: hover) and (pointer: fine) {
