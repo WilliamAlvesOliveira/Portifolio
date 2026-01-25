@@ -295,13 +295,18 @@ main > section {
 
 main{
     margin: auto;
-    max-width: 1300px;
+    max-width: 1200px;
     padding: 10px;
     margin-bottom: 30px;
     border-radius: 0 30px 0 30px;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
     overflow-wrap: break-word;
+}
+
+main section{
+   max-width: 1000px;
+   margin: auto;
 }
 
 main > h2{
