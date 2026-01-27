@@ -31,6 +31,22 @@
         text-align: right;
     }
 
+    #Escolaridade{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #Escolaridade section{
+        width: 100%;
+        padding: 0px 15px;
+    }
+
+    #Escolaridade section h2{
+        text-align: center;
+    }
+
+
+
     .website-grid3{
         grid-template-areas: 
         "advinhacaoprint advinhacaoprint"
