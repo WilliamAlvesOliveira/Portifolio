@@ -42,5 +42,5 @@ Você pode me encontrar e acompanhar meus projetos em:
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/william-oliveira-a047a7268/)
 - 🧑‍💻 [GitHub](https://github.com/WilliamAlvesOliveira)
-- 📧 [E-mail](willbor27pro@gmail.com)
-- 📱 [Telefone / WhatsApp](tel:+55 (11)96116-6844)
+- 📧 E-mail: willbor27pro@gmail.com
+- 📱 Telefone / WhatsApp: +55 (11)96116-6844
