@@ -537,6 +537,9 @@ footer {
     padding: 20px;
 }
 
+footer h3{
+    margin: 10px 0px;
+}
 
 .Minhas-Redes {
     display: flex;
@@ -579,6 +582,18 @@ footer {
 
 .redes > p {
     font-size: 10px;
+}
+
+#contatos{
+    display: flex;
+    gap: 30px;
+}
+
+.contato{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
 }
 
 .modal {

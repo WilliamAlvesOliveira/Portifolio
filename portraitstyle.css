@@ -98,6 +98,11 @@
     .nav.right {
         right: 10px;
     }
+
+    #contatos{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 @media(max-width:200px){
