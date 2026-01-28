@@ -36,15 +36,10 @@ O projeto valoriza a experiência do usuário, a responsividade e a fluidez na n
 **Tecnologias:** HTML, CSS, React (Vite)  
 🔗 [Acesse o projeto](https://williamalvesoliveira.github.io/art-gallery/)
 
-## 📄 Licença
-
-Este repositório está licenciado sob a [Licença MIT](./LICENSE).  
-Você é livre para usar, modificar e distribuir, com os devidos créditos.
-
 ## 📬 Contato
 
 Você pode me encontrar e acompanhar meus projetos em:
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/william-oliveira-a047a7268/)
 - 🧑‍💻 [GitHub](https://github.com/WilliamAlvesOliveira)
-- 📧 E-mail: willbor27proo@gmail.com
+- 📧 E-mail: willbor27pro@gmail.com
