@@ -1,7 +1,6 @@
 @media screen and (orientation: landscape) {
     .william{
         display: flex;
-        padding-left: 15vw;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -11,9 +10,13 @@
         align-self: center;
         justify-self: flex-start;
         font-size: 2.5em;
+        text-decoration: underline;
+        text-decoration-color: var(--border-color);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 5px;
         margin-left: 3vw;
         margin-right: 3vw;
-        border-bottom: 1px solid var(--border-color);
+        width: 100%;
     }
 
     .william   img{
@@ -29,13 +32,7 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
-    .william{
-        padding: 0;
-        max-height: none;
-        margin-left: 5px;
-    }
-
-    .william > div > h1{
+     .william > div > h1{
         font-size: 2em;
     }
 

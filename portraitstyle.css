@@ -14,15 +14,12 @@
     }
     
     .william img {
-        position: relative;
-        top: -10px;
-        width: 70vw;
-        z-index: -1;
+        width: 60vw;
     }
 
     #aboutme{
         position: relative;
-        top:  -30px;
+        top:  -20px;
         text-align: right;
     }
 
