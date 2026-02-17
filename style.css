@@ -241,7 +241,7 @@ main > .project {
     color: #111;
 }
 
-.stacks-container{
+.skills-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,11 +257,7 @@ main > .project {
     margin: 30px 0px;
 }
 
-.stacks-container > h2{
-    border-bottom: 1px solid var(--border-color);
-}
-
-.stacks{
+.skills{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,7 +265,7 @@ main > .project {
     flex-wrap: wrap;
 }
 
-.stack{
+.skill{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,22 +278,22 @@ main > .project {
     color: white;
 }
 
-.stack:hover > img{
+.skill:hover > img{
     width: 68%;
     transition: 0.5s;
 }
 
-.stack > img{
+.skill > img{
     width: 60%;
 }
 
-.stack > p {
+.skill > p {
     color: var(--text-color);
     font-size: clamp(0.2em, 2.2vw, 1em);
     margin-bottom: 0px;
 }
 
-.stack-obs{
+.skill-obs{
     text-align: right;
     width: 100%; 
     margin: 30px 0px 0px 0px;
